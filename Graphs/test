@@ -1,0 +1,14 @@
+def roadsAndLibraries(n, c_lib, c_road, cities):
+    # Write your code here
+    dic = {}
+    for (a, b) in cities :
+        if not dic.has_key(a):
+            dic[a] = 0
+        dic[a]+=1
+        if not dic.has_key(b):
+            dic[b] = 0
+        dic[a] += 1
+
+
+
+roadsAndLibraries(3, 2, 5, [[1, 2], [3, 1], [2, 3]])
